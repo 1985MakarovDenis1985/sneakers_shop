@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'TruenoLt';
+    src: url('../fonts/TruenoLt.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'myriadpro-regular';
+    src: url('../fonts/MyriadPro/myriadpro-regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'TruenoSBd';
+    src: url('../fonts/trueno/TruenoSBd.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'TruenoBd';
+    src: url('../fonts/trueno/TruenoBd.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'TruenoLt';
+    src: url('../fonts/trueno/TruenoLt.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Audiowide';
+    src: url('../fonts/Audiowide-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// $copinc: #ff7373;
+//
+// @mixin btn{
+// width: 100px;
+// height: 100px;
+// background: red;
+// }
+
+@import "parth_1_header_nav";
+@import "parth_2_header";
+// @import "parth_3_main_content";
+// @import "parth_4_posts";
+// @import "parth_5_under_posts";
+// @import "parth_6_footer";

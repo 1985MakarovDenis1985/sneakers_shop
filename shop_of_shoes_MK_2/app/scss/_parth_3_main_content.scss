@@ -1,0 +1,387 @@
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+.main_discription {
+  height: 1900px;
+}
+
+.main_discription {
+  width: 1200px;
+  height: 1000px;
+  margin: 650px auto auto;
+}
+
+.main_discription_top_left_shoes {
+  width: 540px;
+  height: 585px;
+  background-image: url("../img/shoe_third_2.png");
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  position: relative;
+  float: left;
+  z-index: 10;
+
+  .main_discription_top_left_shoes_add {
+    width: 25px;
+    height: 70px;
+    background-image: url("../img/shoe_third_add.png");
+    background-position: 10px 0;
+    position: absolute;
+    margin-top: 260px;
+    margin-left: -25px;
+    z-index: 1;
+  }
+}
+
+.main_discription_top_left_shoes_button {
+  outline: none;
+  width: 250px;
+  height: 50px;
+  background: white;
+  border: 1px solid #4bd8cd;
+  color: white;
+  background: #4bd8cd;
+  font-family: 'TruenoBd';
+  font-size: 11pt;
+  margin: 430px 130px;
+  transition: 1s;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  color: black;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 190px;
+    height: 40px;
+    margin-top: -11px;
+    margin-left: -250px;
+    background: white;
+    position: absolute;
+    transition: 1;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    width: 190px;
+    height: 40px;
+    margin-top: -11px;
+    margin-left: 60px;
+    background: white;
+    position: absolute;
+    transition: 1;
+    z-index: -1;
+  }
+
+  &:hover::after {
+    margin-left: -180px;
+    transition: 1s;
+  }
+
+  &:hover::before {
+    margin-left: -10px;
+    transition: 1s;
+  }
+
+  &:hover {
+    color: #4bd8cd;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.main_discription_top_right_shoes {
+  width: 630px;
+  height: 255px;
+  background-image: url("../img/shoe_second.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  float: right;
+  margin-top: 40px;
+
+  .main_discription_top_right_shoes_button {
+    outline: none;
+    width: 190px;
+    height: 60px;
+    background: #623232;
+    // opacity: 0.2;
+    // border: 3px solid #ff7373;
+    color: #fff;
+    font-family: 'TruenoBd';
+    font-size: 11pt;
+    margin: 170px 290px;
+    transition: 1s;
+    position: absolute;
+    z-index: 10;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      width: 200px;
+      height: 65px;
+      margin-top: -89px;
+      margin-left: -60px;
+      background: white;
+      position: absolute;
+      opacity: 0.2;
+      transition: 1;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      width: 200px;
+      height: 63px;
+      opacity: 0.2;
+      margin-top: 40px;
+      margin-left: -135px;
+      background: white;
+      position: absolute;
+      transition: 1;
+      z-index: -1;
+    }
+
+    &:hover::after {
+      margin-top: -23px;
+      margin-left: -135px;
+      transition: 1s;
+    }
+
+    &:hover::before {
+      margin-top: -25px;
+      margin-left: -60px;
+      transition: 1s;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.main_discription_bottom_left_shoes,
+.main_discription_bottom_right_shoes {
+  width: 295px;
+  height: 295px;
+  float: right;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-image: url("../img/shoe_fift.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main_discription_bottom_right_shoes {
+  margin-left: 0;
+  background-image: url("../img/shoe_fourth.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main_discription_box_shoes_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.main_discription_box_shoes_one,
+.main_discription_box_shoes_three,
+.main_discription_box_shoes_two {
+  width: 1200px;
+  height: 800px;
+  // border: 1px solid gray;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  background: #fff;
+
+  & .box_shoes {
+    width: 260px;
+    height: 330px;
+    border: 2px solid #c1beba;
+    margin-top: 50px;
+    position: relative;
+    // background: white;
+    font-family: 'TruenoLt';
+    color: #8a8784;
+    background-size: 230px 230px;
+    background-repeat: no-repeat;
+    background-position: 10px 35px;
+  }
+}
+
+.main_discription_box_shoes_two {
+  background: white;
+  z-index: 1;
+}
+
+.main_discription_box_shoes_three {
+  background: white;
+  z-index: 2;
+}
+
+input {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  font-family: 'TruenoLt';
+  padding: 10px 40px;
+  text-align: center;
+  display: inline-block;
+  font-size: 21pt;
+  margin: auto;
+  color: #bdb9b5;
+}
+
+.one {
+  margin-left: 300px;
+}
+
+#first:checked~.main_discription_box_shoes_one {
+  z-index: 11;
+  // background: red;
+}
+
+#first:checked~.one {
+  font-family: 'TruenoBd';
+  color: #623232;
+}
+
+#second:checked~.main_discription_box_shoes_two {
+  z-index: 11;
+  // background: green;
+}
+
+#second:checked~.two {
+  font-family: 'TruenoBd';
+  color: #623232;
+  // background: green;
+}
+
+#third:checked~.main_discription_box_shoes_three {
+  z-index: 11;
+}
+
+#third:checked~.three {
+  font-family: 'TruenoBd';
+  color: #623232;
+}
+// BOX_SHOES
+.--box_shoes_1 {
+  background-image: url("../img/shoe_item_1.png");
+
+}
+.--box_shoes_2 {
+  background-image: url("../img/shoe_item_2.png");
+
+}
+.--box_shoes_3 {
+  background-image: url("../img/shoe_item_3.png");
+
+}
+.--box_shoes_4 {
+  background-image: url("../img/shoe_item_4.png");
+
+}
+.--box_shoes_5 {
+  background-image: url("../img/shoe_item_5.png") !important;
+
+}
+.--box_shoes_6 {
+  background-image: url("../img/shoe_item_6.png") !important;
+
+}
+.--box_shoes_7 {
+  background-image: url("../img/shoe_item_7.png") !important;
+
+}
+.--box_shoes_8 {
+  background-image: url("../img/shoe_item_8.png") !important;
+
+}
+
+.box_shoes_first_price {
+  color: #ff9898;
+  font-size: 15pt;
+  margin: 20px 0px 0px 20px;
+}
+.box_shoes_second_price{
+  font-size: 12pt;
+  margin: 5px 20px;
+  text-decoration: line-through;
+}
+.box_shoes_third_price{
+  font-family: 'TruenoBd';
+  margin: 180px 0 0 10px;
+}
+.box_shoes_fourth_price{
+  margin: 5px 0 0 10px;
+  line-height: 20px;
+}
+.box_shoes_fifth_price{
+ margin: 10px 0 0 10px;
+ color: #c6c2bf;
+ font-size: 10pt;
+}
+.box_shoes_box_sale{
+  padding: 10px;
+  color: white;
+  background: #ff7373;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+.--box_shoes_first_price_gray{
+  color: #c6c2bf;
+}
+.--box_shoes_second_price_transparent{
+  color: transparent;
+}
+// BOX_SHOES
+
+.main_discription_box_brands{
+  width: 1200px;
+  height: 190px;
+  position: relative;
+  margin-top: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  & .box_brands{
+    width: 170px;
+    height: 170px;
+    margin-top: 10px;
+    background-image: url(../img/sprite_brands.png);
+    background-repeat: no-repeat;
+  }
+  & .--box_brands_1{
+    background-position: 35px 25px;
+  }
+  & .--box_brands_2{
+    background-position: -120px 30px;
+  }
+  & .--box_brands_3{
+    background-position: -300px 30px;
+  }
+  & .--box_brands_4{
+    background-position: -480px 30px;
+  }
+  & .--box_brands_5{
+    background-position: -670px 30px;
+  }
+  & .--box_brands_6{
+    background-position: -850px 30px;
+  }
+}

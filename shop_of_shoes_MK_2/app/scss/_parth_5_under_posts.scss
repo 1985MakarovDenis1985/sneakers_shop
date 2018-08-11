@@ -1,0 +1,173 @@
+.under_posts_text {
+  width: 300px;
+  display: block;
+  position: relative;
+  margin: auto;
+  font-family: 'TruenoBd';
+  font-size: 30pt;
+  color: #623232;
+  margin-top: 80px;
+}
+
+.under_posts {
+  width: 1200px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .under_posts_boxes {
+    width: 350px;
+    height: 350px;
+    margin-top: 100px;
+    background-image: url("../img/underpost_1.png");
+    background-size: cover;
+    color: white;
+    line-height: 22px;
+    font-family: 'myriadpro-regular';
+
+    .under_posts_boxes_first {
+      font-size: 11pt;
+      margin: 230px 50px;
+    }
+
+    .under_posts_boxes_second {
+      width: 100px;
+      height: 30px;
+      background-image: url("../img/underpost_icon.png");
+      background-repeat: no-repeat;
+      color: #ff7373;
+      padding: 7px 33px;
+      margin: -230px 50px !important;
+    }
+  }
+}
+
+.--under_posts_boxes_second {
+  background-image: url("../img/underpost_2.png") !important;
+}
+
+.--under_posts_boxes_third {
+  background-image: url("../img/underpost_3.png") !important;
+}
+
+.help_wrap{
+  width: 100%;
+  background: #ff7373;
+  @media screen and (max-width: 1200px) {
+    width: 1200px;
+  }
+}
+.box_help {
+  width: 1200px;
+  height: 300px;
+  background: #ff7373;
+  margin: auto;
+
+  .box_help_message {
+    width: 400px;
+    height: 60px;
+    background-image: url("../img/message.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    cursor: pointer;
+    margin: 120px 5px;
+
+    .box_help_message_bottom_text,
+    .box_help_message_top_text {
+      margin-left: 100px;
+      font-family: 'TruenoBd';
+      color: white;
+      font-size: 21pt;
+    }
+
+    .box_help_message_bottom_text {
+      font-family: 'TruenoLt';
+      font-size: 11pt;
+      cursor: pointer;
+    }
+  }
+}
+
+.box_help_button {
+  width: 250px;
+  height: 60px;
+  background: #623232;
+  margin: 120px 945px;
+  outline: none;
+  border: none;
+  color: white;
+  font-family: 'TruenoLt';
+  font-size: 11pt;
+  position: absolute;
+  overflow:hidden;
+  transition: 1s;
+  &:before{
+    width: 300px;
+    height: 110px;
+    content: '';
+    background: #fff;
+    position: absolute;
+    transition: 1s;
+    transform: rotate(-20deg);
+    margin-left: -190px;
+    margin-top: -170px;
+    z-index: -1;
+  }
+  &:after{
+    width: 300px;
+    height: 120px;
+    content: '';
+    background: #fff;
+    position: absolute;
+    transition: 1s;
+    transform: rotate(-20deg);
+    margin-left: 0px;
+    margin-top: 35px;
+    z-index: -1;
+  }
+}
+.box_help_button:hover::before{
+  margin-left: -90px;
+  margin-top: -80px;
+}
+.box_help_button:hover::after{
+  margin-left: -230px;
+  margin-top: -30px;
+}
+.box_help_button:hover{
+  color: #ff7373;
+  z-index: 100;
+}
+
+.box_help_message_top_text::before{
+  width: 30px;
+  height: 50px;
+  background: #ff7373;
+  content: '';
+  position: absolute;
+  margin-left: -50px;
+  transition: 3s;
+}
+.box_help_message_top_text::after{
+  width: 20px;
+  height: 50px;
+  background: #ff7373;
+  content: '';
+  position: absolute;
+  margin-left: -380px;
+  transition: 5s;
+}
+.box_help_message_top_text{
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.box_help_message_top_text:hover::before{
+  margin-left: 300px;
+}
+.box_help_message_top_text:hover::after{
+  margin-left: 170px;
+}
