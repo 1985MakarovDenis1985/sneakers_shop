@@ -11,6 +11,18 @@
     font-style: normal;
 }
 @font-face{
+    font-family: 'Montserrat-Thin';
+    src: url('../fonts/Montserrat/Montserrat-Thin.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'TruenoBdOl';
+    src: url('../fonts/trueno/TruenoBdOl.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
     font-family: 'TruenoSBd';
     src: url('../fonts/trueno/TruenoSBd.otf');
     font-weight: normal;
@@ -43,10 +55,12 @@
 // background: red;
 // }
 
+@import "sprite";
 @import "parth_1_header_nav";
 @import "parth_2_header";
 @import "parth_3_main_content";
-// @import "parth_4_posts";
-// @import "parth_5_under_posts";
-// @import "parth_6_footer";
+@import "parth_4_posts";
+@import "parth_5_under_posts";
+@import "parth_6_footer";
 @import "parth_7_425px";
+// @import "sprite";

@@ -9,6 +9,9 @@
 .header_undernav{
   max-width: 1200px;
   margin: auto;
+  @media screen and (max-width: 1024px){
+    width: 1024px;
+  }
 }
 
 .logo_box{

@@ -9,11 +9,15 @@
     height: 350px;
     }
 }
+
 .undernav_cover{
 max-width: 1200px;
 height: inherit;
 margin: auto;
 background: #f0efee;
+@media screen and (max-width: 1024px){
+  max-width: 1024px;
+  }
 }
 
 .undernav_cover_left{
@@ -60,6 +64,7 @@ background: #f0efee;
   @media screen and (max-width: 1024px){
     padding-top: 30px;
     padding-left: 30px;
+    width: 450px;
   }
   @media screen and (max-width: 1024px){
     float: left;
@@ -116,9 +121,9 @@ background: #f0efee;
   color: #8a8784;
   line-height: 30px;
   margin-top: 30px;
-  // @media screen and (max-width: 1024px){
-  //   margin-top: 30px;
-  // }
+  @media screen and (max-width: 1024px){
+    font-size: 14pt;
+  }
   @media screen and (max-width: 768px){
     display: none;
   }
@@ -194,6 +199,8 @@ background: #f0efee;
   float: none;
   clear: both;
 }
+
+
 //
 .main_discription {
   // height: 1900px;
@@ -205,40 +212,128 @@ background: #f0efee;
   // height: 1000px;
   // margin: 650px auto auto;
 }
-//
+
+
+//MAIN PICTURE
 .main_discription_top_left_shoes {
+  box-sizing: border-box;
   width: 540px;
   height: 585px;
-  background-image: url("../img/shoe_third_2.png");
+  background-image: url("../img/2_shoe_third_2.png");
   background-repeat: no-repeat;
   margin-top: 70px;
   position: relative;
   float: left;
   z-index: 10;
+  // @include sprite($shoe_third);
+  // background-size: 1000%;
+  @media screen and (max-width: 1440px){
+  }
 }
+.main_discription_top_left_shoes_text,
+.main_discription_bottom_left_text{
+  position: relative;
+  color: white;
+  width: 290px;
+  margin: auto;
+  margin-top: 40px;
+  font-size: 25pt;
+  font-family: 'Montserrat-Thin';
+}
+.left_shoes_text_second{
+  // width: 130px;
+  // height: 20px;
+  margin-top: 15px;
+  margin-left: 135px;
+  position: absolute;
+}
+.left_shoes_word_second{
+  display: inline-block;
+  color: #4bd8cd;
+  font-family: 'TruenoBd';
+  font-size: 25pt;
+  margin-left: -3px;
+  animation-name: shoes_word;
+  animation-duration: 7s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  &:nth-child(1){
+    animation-delay: 0.3s;
+  }
+  &:nth-child(2){
+    animation-delay: 0.6s;
+  }
+  &:nth-child(3){
+    animation-delay: 0.9s;
+  }
+  &:nth-child(4){
+    animation-delay: 1.2s;
+  }
+  &:nth-child(5){
+    margin-left: 10px;
+    animation-delay: 1.5s;
+  }
+  &:nth-child(6){
+    animation-delay: 1.8s;
+  }
+  &:nth-child(7){
+    animation-delay: 2.1s;
+  }
+  &:nth-child(8){
+    animation-delay: 2.4s;
+  }
+  &:nth-child(9){
+    animation-delay: 2.7s;
+  }
+  &:nth-child(10){
+    animation-delay: 3s;
+  }
+}
+@keyframes shoes_word {
+  0%{
+    color:#4bd8cd;
+  }
+  15%{
+    color:#4bd8cd;
+  }
+  25%{
+    color: black;
+  }
+  35%{
+    color:#4bd8cd;
+  }
+  100%{
+    color:#4bd8cd;
+  }
+}
+
+
 
   .main_discription_top_left_shoes_add {
     width: 25px;
-    height: 70px;
-    background-image: url("../img/shoe_third_add.png");
-    background-position: 10px 0;
+    height: 90px;
+    background-image: url("../img/3_shoe_third_add.png");
+    background-position: 10px 0px;
+    background-size: cover;
     position: absolute;
-    margin-top: 260px;
+    margin-top: 187px;
     margin-left: -25px;
     z-index: 1;
   }
-//
+
 .main_discription_top_left_shoes_button {
   outline: none;
   width: 250px;
   height: 50px;
+  // margin-left: 10px !important;
   background: white;
   border: 1px solid #4bd8cd;
-  color: white;
   background: #4bd8cd;
   font-family: 'TruenoBd';
   font-size: 11pt;
-  margin: 430px 130px;
+  margin-top: 350px;
+  margin-left: 140px;
   transition: 1s;
   position: relative;
   z-index: 10;
@@ -286,17 +381,102 @@ background: #f0efee;
     border-right: none;
   }
 }
-//
+
+
+
+
+
+
+// TOP_RIGHT_PICTURE
+
 .main_discription_top_right_shoes {
   width: 630px;
   height: 255px;
-  background-image: url("../img/shoe_second.png");
+  background-image: url("../img/4_shoe_second.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
   float: right;
   margin-top: 40px;
 }
+
+.top_right_shoes_text{
+  // width: 200px;
+  margin-left: 315px;
+  margin-top: 60px;
+  font-size: 25pt;
+  font-family: 'Montserrat-Thin';
+  color: white;
+}
+
+.top_right_shoes_word_box{
+  margin-left: 300px;
+  margin-top: 10px;
+  display: flex;
+  height: 30px;
+  flex-direction: row;
+}
+
+.top_right_shoes_word{
+  // display: inline-block;
+  font-family: 'TruenoBd';
+  font-size: 25pt;
+  // margin-left: -4px;
+  color: #fff;
+  animation-name: top_right_word;
+  animation-duration: 5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  text-shadow: 0px 11px 15px rgba(255, 255, 255, 0);
+  &:nth-child(2){
+    animation-delay: 0.1s;
+  }
+  &:nth-child(3){
+    animation-delay: 0.2s;
+  }
+  &:nth-child(4){
+    margin-left: 10px;
+    animation-delay: 0.3s;
+  }
+  &:nth-child(5){
+    animation-delay: 0.4s;
+  }
+  &:nth-child(6){
+    animation-delay: 0.5s;
+  }
+  &:nth-child(7){
+    animation-delay: 0.6s;
+  }
+  &:nth-child(8){
+    animation-delay: 0.7s;
+  }
+  &:nth-child(9){
+    animation-delay: 0.8s;
+  }
+  &:nth-child(10){
+    animation-delay: 0.9s;
+  }
+  &:nth-child(11){
+    animation-delay: 1s;
+  }
+}
+
+@keyframes top_right_word {
+  0%{
+    margin-top: 0;
+  }
+  5%{
+    margin-top: -10px;
+  }
+  10%{
+    margin-top: 0;
+  }
+  100%{
+    margin-top: 0;
+  }
+}
+
   .main_discription_top_right_shoes_button {
     outline: none;
     width: 190px;
@@ -307,8 +487,9 @@ background: #f0efee;
     color: #fff;
     font-family: 'TruenoBd';
     font-size: 11pt;
-    margin: 170px 290px;
     transition: 1s;
+    margin-left: 340px;
+    margin-top: 45px;
     position: absolute;
     z-index: 10;
     border: none;
@@ -324,7 +505,7 @@ background: #f0efee;
       background: white;
       position: absolute;
       opacity: 0.2;
-      transition: 1;
+      transition: 1s;
       z-index: -1;
     }
 
@@ -337,7 +518,7 @@ background: #f0efee;
       margin-left: -135px;
       background: white;
       position: absolute;
-      transition: 1;
+      transition: 1s;
       z-index: -1;
     }
 
@@ -358,7 +539,10 @@ background: #f0efee;
       }
 
 }
-//
+
+
+//BOTOM LEFT
+
 .main_discription_bottom_left_shoes,
 .main_discription_bottom_right_shoes {
   width: 295px;
@@ -366,18 +550,207 @@ background: #f0efee;
   float: right;
   margin-top: 20px;
   margin-left: 20px;
-  background-image: url("../img/shoe_fift.png");
+  background-image: url("../img/5_shoe_fourth.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
-//
+
+.bottom_right_shoe_text{
+  font-family: 'Montserrat-Thin';
+  font-size: 25pt;
+  color: #6b7072;
+  text-align: center;
+  margin-top: 30px;
+}
+.bottom_right_shoe_text_box{
+  display: flex;
+  flex-direction: row;
+  // font-family: 'TruenoBdOl';
+  // font-family: 'TruenoSBd';
+  font-size: 27pt;
+  margin-top: 10px !important;
+  width: 170px;
+  color: white;
+  margin: auto;
+}
+.bottom_right_word{
+  font-family: 'TruenoSBd';
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.bottom_right_word_4,
+.bottom_right_word_7,
+.bottom_right_word_1{
+  animation-name: word_5;
+  animation-duration: 5s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-end;
+}
+@keyframes word_5 {
+  0%{
+    font-family: 'TruenoSBd';
+  }
+  5%{
+    font-family: 'TruenoBdOl';
+  }
+  20%{
+    font-family: 'TruenoSBd';
+  }
+  25%{
+    font-family: 'TruenoBdOl';
+  }
+  55%{
+    font-family: 'TruenoSBd';
+  }
+  100%{
+    font-family: 'TruenoSBd';
+  }
+}
+
+.bottom_right_word_7{
+  animation-name: word_7;
+}
+@keyframes word_7 {
+  0%{
+    font-family: 'TruenoSBd';
+  }
+  15%{
+    font-family: 'TruenoBdOl';
+  }
+  17%{
+    font-family: 'TruenoSBd';
+  }
+  18%{
+    font-family: 'TruenoBdOl';
+  }
+  100%{
+    font-family: 'TruenoSBd';
+  }
+}
+
+.bottom_right_word_1{
+  animation-name: word_1;
+  transition: none;
+}
+
+@keyframes word_1 {
+  0%{
+    font-family: 'TruenoSBd';
+  }
+  55%{
+    font-family: 'TruenoSBd';
+    color: white;
+  }
+  70%{
+    font-family: 'TruenoBdOl';
+    color: black;
+  }
+  72%{
+    font-family: 'TruenoSBd';
+    color: white;
+  }
+  75%{
+    font-family: 'TruenoBdOl';
+    color: black;
+  }
+  100%{
+    font-family: 'TruenoSBd';
+  }
+}
+
+
+
+
+
+// BOTTOM RIGHT
+
 .main_discription_bottom_right_shoes {
   margin-left: 0;
-  background-image: url("../img/shoe_fourth.png");
+  background-image: url("../img/6_shoe_fift.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
-//
+.main_discription_bottom_left_text{
+  width: 112px;
+  margin-top: 190px;
+}
+.bottom_left_word_shoes{
+
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+}
+.bottom_left_word_second{
+  color: #ff7373 !important;
+  font-size: 15pt;
+  position: relative;
+  margin: auto;
+  width: 165px;
+  font-family: 'TruenoBd';
+  font-size: 25pt;
+  animation-name: word_under_shadow;
+  animation-fill-mode: backwards;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes word_under_shadow {
+  0%{}
+  15%{
+    transform: scale(1);
+  }
+  30%{
+    transform: scale(1.1);
+  }
+  35%{
+    transform: scale(1.0);
+  }
+  100%{
+    transform: scale(1.0);
+  }
+}
+
+
+.bottom_left_word_second_shadow{
+  position: absolute;
+  margin-top: -33px;
+  margin-left: 64px;
+  opacity: 0;
+  animation-name: word_shadow;
+  animation-fill-mode: backwards;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes word_shadow {
+  0%{
+    opacity: 0;
+    transform: scale(1);
+  }
+  34%{
+    transform: scale(1);
+    opacity: 0;
+  }
+  35%{
+    transform: scale(1);
+    opacity: 0.1;
+  }
+  65%{
+    transform: scale(1.3);
+    opacity: 0.2;
+  }
+  100%{
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+
+// UNDER PICTURE
 .main_discription_box_shoes_row {
   display: flex;
   flex-direction: row;
@@ -473,28 +846,28 @@ label {
 }
 // BOX_SHOES
 .box_shoes_1 {
-  background-image: url("../img/shoe_item_1.png");
+  background-image: url("../img/7_shoe_item_1.png");
 }
 .box_shoes_2 {
-  background-image: url("../img/shoe_item_2.png");
+  background-image: url("../img/8_shoe_item_2.png");
 }
 .box_shoes_3 {
-  background-image: url("../img/shoe_item_3.png");
+  background-image: url("../img/9_shoe_item_3.png");
 }
 .box_shoes_4 {
-  background-image: url("../img/shoe_item_4.png");
+  background-image: url("../img/10_shoe_item_4.png");
 }
 .box_shoes_5 {
-  background-image: url("../img/shoe_item_5.png") !important;
+  background-image: url("../img/11_shoe_item_5.png");
 }
 .box_shoes_6 {
-  background-image: url("../img/shoe_item_6.png") !important;
+  background-image: url("../img/12_shoe_item_6.png");
 }
 .box_shoes_7 {
-  background-image: url("../img/shoe_item_7.png") !important;
+  background-image: url("../img/13_shoe_item_7.png");
 }
 .box_shoes_8 {
-  background-image: url("../img/shoe_item_8.png") !important;
+  background-image: url("../img/14_shoe_item_8.png");
 }
 
 .box_shoes_first_price {
@@ -548,7 +921,7 @@ label {
     width: 170px;
     height: 170px;
     margin-top: 10px;
-    background-image: url(../img/sprite_brands.png);
+    background-image: url(../img/15_sprite_brands.png);
     background-repeat: no-repeat;
   }
   & .box_brands_1{
