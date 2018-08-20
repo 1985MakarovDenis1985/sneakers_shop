@@ -1,14 +1,138 @@
-.under_posts_text {
+.over_slider_text,
+.over_slider_text_shadow{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   width: 300px;
-  display: block;
   position: relative;
   margin: auto;
   font-family: 'TruenoBd';
   font-size: 30pt;
-  color: #623232;
-  margin-top: 80px;
-  margin-bottom: 70px;
 }
+
+.over_slider_text{
+  color: #623232 !important;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  height: 28px;
+}
+
+.over_slider_text_shadow{
+  margin-top: -35px;
+  margin-bottom: 30px;
+  transform: rotateX(180deg);
+  // transform: rotatez(180deg);
+  perspective-origin: 50% 50%;
+  perspective: 150px;
+  width: 330px !important;
+
+}
+
+
+
+.over_slider_text_word_shadow{
+
+  -webkit-background-clip: text;
+  color: transparent !important;
+  // color: black !important;
+  transform: rotateX(-60deg);
+  // transform: rotateY(0deg);
+
+
+  background-image: url(../img/28_news.jpg);
+  background-position: 0 55px;
+  &:nth-child(2){
+    animation-delay: 0.2s;
+  }
+  &:nth-child(3){
+    animation-delay: 0.4s;
+  }
+  &:nth-child(4){
+    animation-delay: 0.6s;
+  }
+  &:nth-child(5){
+    animation-delay: 0.8s;
+  }
+  &:nth-child(6){
+    animation-delay: 1s;
+  }
+  &:nth-child(7){
+    animation-delay: 1.2s;
+    margin-left: 10px;
+  }
+  &:nth-child(8){
+    animation-delay: 1.4s;
+  }
+  &:nth-child(9){
+    animation-delay: 1.6s;
+  }
+  &:nth-child(10){
+    animation-delay: 1.8s;
+  }
+}
+
+.over_slider_text_word,
+.over_slider_text_word_shadow{
+  animation-name: slider_text_word;
+  animation-duration: 5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  &:nth-child(2){
+    animation-delay: 0.2s;
+  }
+  &:nth-child(3){
+    animation-delay: 0.4s;
+  }
+  &:nth-child(4){
+    animation-delay: 0.6s;
+  }
+  &:nth-child(5){
+    animation-delay: 0.8s;
+  }
+  &:nth-child(6){
+    animation-delay: 1s;
+  }
+  &:nth-child(7){
+    animation-delay: 1.2s;
+    margin-left: 10px;
+  }
+  &:nth-child(8){
+    animation-delay: 1.4s;
+  }
+  &:nth-child(9){
+    animation-delay: 1.6s;
+  }
+  &:nth-child(10){
+    animation-delay: 1.8s;
+  }
+}
+
+@keyframes slider_text_word {
+  0%{
+    margin-top: 0;
+    background-position: 0 55px;
+  }
+  5%{
+    margin-top: -10px;
+    background-position: 0 70px;
+  }
+  15%{
+    margin-top: 0;
+    background-position: 0 55px;
+
+  }
+  50%{
+    margin-top: 0;
+  }
+  100%{
+    margin-top: 0;
+    background-position: 0 55px;
+  }
+}
+
+
 
 .slider{
   width: 1200px;
