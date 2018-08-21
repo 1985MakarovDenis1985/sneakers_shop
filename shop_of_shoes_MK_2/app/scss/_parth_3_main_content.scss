@@ -11,7 +11,7 @@
 }
 
 .undernav_cover{
-max-width: 1200px;
+width: 1200px;
 height: inherit;
 margin: auto;
 background: #f0efee;
@@ -74,25 +74,13 @@ background: #f0efee;
     padding-top: 50px;
   }
 }
-.undernav_cover_right_text_first{
-  // padding-top: 140px;
-  // margin-bottom: 20px;
-  // margin-top: 0px !important;
-  // @media screen and (max-width: 768px){
-  //   padding-top: 50px;
-  // }
-}
+
 
 .undernav_cover_right_text_first,
 .undernav_cover_right_text_fourth{
   font-family: 'myriadpro-regular';
   font-size: 30pt;
   color: #623232;
-  // margin-left: 650px;
-  // margin-top: 30px;
-  // @media screen and (max-width: 768px){
-  //   margin-left: 450px;
-  // }
 }
 
 .undernav_cover_right_text_second,
@@ -105,16 +93,10 @@ background: #f0efee;
     font-size: 33pt;
     margin-top: 10px;
   }
-  // @media screen and (max-width: 768px){
-  //   margin-left: 450px;
-  // }
 }
 .undernav_cover_right_text_third{
   font-size: 30pt;
   color: #ff7373;
-  // @media screen and (max-width: 768px){
-  //   margin-top: 0px;
-  // }
 }
 .undernav_cover_right_text_fourth{
   font-size: 16pt;
@@ -193,24 +175,17 @@ background: #f0efee;
 
 // Second_parth
 
-
-
 .clearfix {
   float: none;
   clear: both;
 }
 
-
-//
-.main_discription {
-  // height: 1900px;
-}
-//
 .main_discription {
   width: 1200px;
   margin:  auto;
-  // height: 1000px;
-  // margin: 650px auto auto;
+  @media screen and (max-width: 1024px){
+    width: 1000px;
+  }
 }
 
 
@@ -225,9 +200,9 @@ background: #f0efee;
   position: relative;
   float: left;
   z-index: 10;
-  // @include sprite($shoe_third);
-  // background-size: 1000%;
-  @media screen and (max-width: 1440px){
+  @media screen and (max-width: 1024px){
+    width: 440px;
+    height: 440px;
   }
 }
 .main_discription_top_left_shoes_text,
@@ -239,13 +214,18 @@ background: #f0efee;
   margin-top: 40px;
   font-size: 25pt;
   font-family: 'Montserrat-Thin';
+  @media screen and (max-width: 1024px){
+    margin-left: 120px;
+  }
 }
+
 .left_shoes_text_second{
-  // width: 130px;
-  // height: 20px;
   margin-top: 15px;
   margin-left: 135px;
   position: absolute;
+  @media screen and (max-width: 1024px){
+    margin-left: 130px;
+  }
 }
 .left_shoes_word_second{
   display: inline-block;
@@ -320,6 +300,9 @@ background: #f0efee;
     margin-top: 187px;
     margin-left: -25px;
     z-index: 1;
+    @media screen and (max-width: 1024px){
+      display: none;
+    }
   }
 
 
@@ -327,7 +310,6 @@ background: #f0efee;
   outline: none;
   width: 250px;
   height: 50px;
-  // margin-left: 10px !important;
   background: white;
   border: 1px solid #4bd8cd;
   background: #4bd8cd;
@@ -341,6 +323,10 @@ background: #f0efee;
   overflow: hidden;
   color: black;
   cursor: pointer;
+  @media screen and (max-width: 1024px){
+    margin-top: 270px;
+    margin-left: 100px;
+  }
 
   &::before {
     content: "";
@@ -384,10 +370,6 @@ background: #f0efee;
 }
 
 
-
-
-
-
 // TOP_RIGHT_PICTURE
 
 .main_discription_top_right_shoes {
@@ -399,6 +381,11 @@ background: #f0efee;
   background-position: 0 0;
   float: right;
   margin-top: 40px;
+  @media screen and (max-width: 1024px){
+    width: 530px;
+    height: 200px;
+    margin-top: 47px;
+  }
 }
 
 .top_right_shoes_text{
@@ -408,6 +395,10 @@ background: #f0efee;
   font-size: 25pt;
   font-family: 'Montserrat-Thin';
   color: white;
+  @media screen and (max-width: 1024px){
+    margin-left: 245px;
+    margin-top: 50px;
+  }
 }
 
 .top_right_shoes_word_box{
@@ -416,13 +407,14 @@ background: #f0efee;
   display: flex;
   height: 30px;
   flex-direction: row;
+  @media screen and (max-width: 1024px){
+    margin-left: 225px;
+  }
 }
 
 .top_right_shoes_word{
-  // display: inline-block;
   font-family: 'TruenoBd';
   font-size: 25pt;
-  // margin-left: -4px;
   color: #fff;
   animation-name: top_right_word;
   animation-duration: 5s;
@@ -483,8 +475,6 @@ background: #f0efee;
     width: 190px;
     height: 60px;
     background: #623232;
-    // opacity: 0.2;
-    // border: 3px solid #ff7373;
     color: #fff;
     font-family: 'TruenoBd';
     font-size: 11pt;
@@ -496,6 +486,11 @@ background: #f0efee;
     border: none;
     overflow: hidden;
     cursor: pointer;
+    @media screen and (max-width: 1024px){
+      margin-left: 260px;
+      margin-top: 15px;
+      height: 45px;
+    }
 
     &::before {
       content: "";
@@ -538,7 +533,6 @@ background: #f0efee;
     &:hover {
       color: white;
       }
-
 }
 
 
@@ -554,6 +548,10 @@ background: #f0efee;
   background-image: url("../img/5_shoe_fourth.png");
   background-repeat: no-repeat;
   background-size: contain;
+  @media screen and (max-width: 1024px){
+    width: 245px;
+    height: 245px;
+  }
 }
 
 .bottom_right_shoe_text{
@@ -566,8 +564,6 @@ background: #f0efee;
 .bottom_right_shoe_text_box{
   display: flex;
   flex-direction: row;
-  // font-family: 'TruenoBdOl';
-  // font-family: 'TruenoSBd';
   font-size: 27pt;
   margin-top: 10px !important;
   width: 170px;
@@ -663,9 +659,6 @@ background: #f0efee;
 }
 
 
-
-
-
 // BOTTOM RIGHT
 
 .main_discription_bottom_right_shoes {
@@ -677,9 +670,12 @@ background: #f0efee;
 .main_discription_bottom_left_text{
   width: 112px;
   margin-top: 190px;
+  @media screen and (max-width: 1024px){
+    margin: auto;
+    margin-top: 150px;
+  }
 }
 .bottom_left_word_shoes{
-
   position: relative;
   margin: auto;
   margin-top: 10px;
@@ -752,11 +748,27 @@ background: #f0efee;
 
 
 // UNDER PICTURE
+
+.main_discription_box_shoes_box{
+  margin: auto;
+  margin-top: 50px;
+  width:610px;
+
+  @media screen and (max-width: 1024px){
+    // width:768px;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+
 .main_discription_box_shoes_row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 1200px;
+  @media screen and (max-width: 1024px){
+    width: 1000px;
+  }
 }
 //
 .main_discription_box_shoes_one,
@@ -764,13 +776,18 @@ background: #f0efee;
 .main_discription_box_shoes_two {
   width: 1200px;
   height: 800px;
-  // border: 1px solid gray;
   clear: both;
   display: flex;
   flex-direction: column;
   position: absolute;
   z-index: 2;
   background: #fff;
+  margin-left: -300px;
+  @media screen and (max-width: 1024px){
+    width: 1000px;
+    margin-left: -195px;
+  }
+
 
   & .box_shoes {
     width: 260px;
@@ -778,12 +795,14 @@ background: #f0efee;
     border: 2px solid #c1beba;
     margin-top: 50px;
     position: relative;
-    // background: white;
     font-family: 'TruenoLt';
     color: #8a8784;
     background-size: 230px 230px;
     background-repeat: no-repeat;
     background-position: 10px 35px;
+    @media screen and (max-width: 1024px){
+      width: 240px;
+    }
   }
 }
 //
@@ -806,46 +825,49 @@ label {
   font-family: 'TruenoLt';
   padding: 10px 40px;
   text-align: center;
-  display: inline-block;
+  // display: inline-block;
   font-size: 21pt;
   margin: auto;
   color: #bdb9b5;
+  @media screen and (max-width: 1024px){
+
+  }
 }
 //
-.one {
-  margin-left: 300px;
+.label_one {
+  // margin-left: 300px;
 }
 
 #first:checked~.main_discription_box_shoes_one {
   z-index: 11;
-  // background: red;
 }
 //
-#first:checked~.one {
+#first:checked~.label_one {
   font-family: 'TruenoBd';
   color: #623232;
 }
 
 #second:checked~.main_discription_box_shoes_two {
   z-index: 11;
-  // background: green;
 }
 //
-#second:checked~.two {
+#second:checked~.label_two {
   font-family: 'TruenoBd';
   color: #623232;
-  // background: green;
 }
 //
 #third:checked~.main_discription_box_shoes_three {
   z-index: 11;
 }
 //
-#third:checked~.three {
+#third:checked~.label_three {
   font-family: 'TruenoBd';
   color: #623232;
 }
+
+
 // BOX_SHOES
+
 .box_shoes_1 {
   background-image: url("../img/7_shoe_item_1.png");
 }
@@ -908,6 +930,8 @@ label {
 .box_shoes_second_price_transparent{
   color: transparent;
 }
+
+
 // BOX_SHOES
 
 .main_discription_box_brands{
@@ -918,6 +942,9 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media screen and (max-width: 1024px){
+    width: 1000px;
+  }
   & .box_brands{
     width: 170px;
     height: 170px;

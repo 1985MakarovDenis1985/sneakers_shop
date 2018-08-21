@@ -22,25 +22,20 @@
   margin-top: -35px;
   margin-bottom: 30px;
   transform: rotateX(180deg);
-  // transform: rotatez(180deg);
   perspective-origin: 50% 50%;
   perspective: 150px;
-  width: 330px !important;
+  width: 320px !important;
 
 }
-
-
 
 .over_slider_text_word_shadow{
 
   -webkit-background-clip: text;
   color: transparent !important;
-  // color: black !important;
   transform: rotateX(-60deg);
-  // transform: rotateY(0deg);
 
 
-  background-image: url(../img/28_news.jpg);
+  background-image: url(../img/28_news.png);
   background-position: 0 55px;
   &:nth-child(2){
     animation-delay: 0.2s;
@@ -75,7 +70,7 @@
 .over_slider_text_word,
 .over_slider_text_word_shadow{
   animation-name: slider_text_word;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-fill-mode: backwards;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -133,15 +128,19 @@
 }
 
 
+// SLIDER
 
 .slider{
   width: 1200px;
   height: 350px;
   margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-around;
   margin-bottom: 50px !important;
+  @media screen and (max-width: 1024px){
+    width: 1024px;
+  }
 }
 
 .slider_box{
@@ -159,24 +158,28 @@
   padding-top: 55%;
   cursor: pointer;
   transition: 0.5s;
+  @media screen and (max-width: 1024px){
+    width: 250px;
+    height: 250px;
+  }
   &:hover > .slider_comments_box{
     background: rgba(0, 0, 0, .7);
   }
 }
 .slick_first{
-background-image: url(../img/slider_1_sneakers_1.jpg);
+background-image: url(../img/slider_1_sneakers_1.png);
 }
 .slick_second{
-  background-image: url(../img/slider_2_sneakers_2.jpg);
+  background-image: url(../img/slider_2_sneakers_2.png);
 }
 .slick_three{
-  background-image: url(../img/slider_3_sneakers_3.jpg);
+  background-image: url(../img/slider_3_sneakers_3.png);
 }
 .slick_fourt{
-  background-image: url(../img/slider_4_sneakers_4.jpg);
+  background-image: url(../img/slider_4_sneakers_4.png);
 }
 .slick_fift{
-  background-image: url(../img/slider_5_sneakers_5.jpg);
+  background-image: url(../img/slider_5_sneakers_5.png);
 }
 
 .slider_comments_box{
@@ -187,6 +190,9 @@ background-image: url(../img/slider_1_sneakers_1.jpg);
   transition: 0.3s;
   padding: 5%;
   color: white;
+  @media screen and (max-width: 1024px){
+    height: 90%;
+  }
 }
 
 .coments_box_second{
@@ -217,6 +223,7 @@ background-image: url(../img/slider_1_sneakers_1.jpg);
     text-decoration: underline;
   }
 }
+
 #first_comment:checked ~ .comments_box_of_people{
   transform: scalex(1);
 }
@@ -243,9 +250,13 @@ background-image: url(../img/slider_1_sneakers_1.jpg);
   border: 2px solid #ff7373;
   border-radius: 5px;
   overflow: hidden;
+  @media screen and (max-width: 1024px){
+    height: 140px;
+    margin-top: -210px;
+  }
   .bg_comments_box_of_people{
       width: 100%;
-      height: 1000px;
+      height: 100%;
       background: black;
       opacity: 0.8;
       position: absolute;
@@ -291,6 +302,8 @@ margin-left: 10px;
   border: none;
   background: transparent;
   color: #623232;
+  @media screen and (max-width: 1024px){
+      display: none !important; }
 }
 .arrow_right{
   margin-top: -150px;
@@ -299,18 +312,7 @@ margin-left: 10px;
 .slick-dots{
   bottom: -10px !important;
 }
-// .slick-dots li{
-//   width: 10px;
-//   height: 10px;
-//   border: 1px solid black;
-// }
-// .slick-dots li button{
-//   width: 5px;
-//   height: 5px;
-//   border: 1px solid black;
-//   font-size: 0;
-//   // visibility: hidden;
-// }
+
 .maindots{
   display: flex;
   flex-direction: row;
@@ -358,19 +360,28 @@ ul > li.slick-active:before {
   @media screen and (max-width: 1200px) {
     width: 1200px;
   }
+  @media screen and (max-width: 1024px){
+    width: 1024px;
+  }
 }
 .box_help {
   width: 1200px;
   height: 300px;
   background: #ff7373;
   margin: auto;
+  @media screen and (max-width: 1024px){
+    width: 1024px;
+  }
 
   .box_help_message {
     width: 410px;
     height: 60px;
     position: absolute;
     cursor: pointer;
-    margin: 120px 5px;
+    margin: 110px 5px;
+    @media screen and (max-width: 1024px){
+      margin: 110px 55px;
+    }
 
     .box_help_message_bottom_text,
     .box_help_message_top_text {
@@ -598,6 +609,9 @@ cursor: pointer;
   overflow:hidden;
   transition: 1s;
   cursor: pointer;
+  @media screen and (max-width: 1024px){
+    margin: 120px 645px;
+  }
   &:before{
     width: 300px;
     height: 110px;

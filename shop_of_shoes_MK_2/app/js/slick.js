@@ -6,8 +6,16 @@ dots: true,
 dotsClass: 'maindots',
 slidesToShow: 3,
 slidesToScroll: 1,
-  cssEase: 'linear',
-  arrows: true,
+cssEase: 'linear',
+arrows: true,
+  // responsive:[
+  //   {
+  //     breakpoint: 1025,
+  //     settings:{
+  //       slidesToShow: 2,
+  //     }
+  //   }
+  // ],
 
 
 prevArrow: '<button class="arrow_left" type="button"><i class="fas fa-chevron-left"></i></button>',
