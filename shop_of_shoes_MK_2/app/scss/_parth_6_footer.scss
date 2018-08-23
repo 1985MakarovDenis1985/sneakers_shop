@@ -7,6 +7,10 @@
   @media screen and (max-width: 1024px) {
     width: 1024px;
   }
+  @media screen and (max-width: 768px) {
+    width: 768px;
+    height: 710px;
+  }
 }
 
 .footer_row_one,
@@ -20,6 +24,9 @@
   justify-content: space-between;
   @media screen and (max-width: 1024px) {
     width: 1024px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 768px;
   }
   .footer_row_one_item {
     width: 130px;
@@ -53,9 +60,13 @@
   background-position: -810px 0 !important;
 }
 
+
 // second
 .footer_row_two{
   height: 500px;
+  @media screen and (max-width: 768px){
+    height: 400px;
+  }
   .footer_row_two_left{
     width: 320px;
     display: flex;
@@ -81,13 +92,7 @@
         color: white;
       }
 
-.footer_left_box_second{
-  background-position: -96px 2px;
-}
-.footer_left_box_third{
-  background-position: -187px 0px;
 
-}
       .footer_row_two_left_text_top,
       .footer_row_two_left_text_bottom{
         position: absolute;
@@ -130,16 +135,28 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media screen and (max-width: 768px){
+    height: 400px;
+  }
   .footer_row_two_right_col{
     width: 170px;
     height: 500px;
     box-sizing: border-box;
     padding: 120px 0px;
+    @media screen and (max-width: 768px){
+      height: 400px;
+      width: 110px;
+      padding: 70px 0px;
+    }
     .footer_row_two_right_col_ul{
       font-family: 'TruenoSBd';
       font-size: 11pt;
       color: #ff7373;
       line-height: 42px;
+      @media screen and (max-width: 768px){
+        font-size: 8pt;
+
+      }
       a{
         text-decoration: none;
         color: white;
@@ -173,6 +190,9 @@
   @media screen and (max-width: 1024px){
     width: 1024px;
   }
+  @media screen and (max-width: 768px){
+    width: 768px;
+  }
 }
 
 .underfooter_left{
@@ -181,6 +201,9 @@
   height: 50px;
   @media screen and (max-width: 1024px) {
     width: 100px;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }
 
@@ -193,6 +216,9 @@
   @media screen and (max-width: 1024px) {
     margin-left: 100px;
   }
+  @media screen and (max-width: 768px) {
+    margin-left: -100px;
+  }
 }
 .underfooter_right{
   width: 300px;
@@ -201,6 +227,9 @@
   z-index: 100;
   @media screen and (max-width: 1024px) {
     margin-left: -100px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-left: -50px;
   }
   .icon{
     display: inline-block;

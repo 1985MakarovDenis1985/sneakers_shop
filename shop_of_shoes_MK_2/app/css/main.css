@@ -61,7 +61,7 @@
 }
 
 .header_nav {
-  max-width: 1200px;
+  width: 1200px;
   height: 80px;
   background: #472424;
   margin: auto;
@@ -286,7 +286,7 @@
 }
 
 .header_undernav {
-  max-width: 1200px;
+  width: 1200px;
   margin: auto;
 }
 
@@ -614,6 +614,7 @@
   height: inherit;
   margin: auto;
   background: #f0efee;
+  position: relative;
 }
 
 .undernav_cover_left {
@@ -746,12 +747,14 @@
 .main_discription_top_left_shoes {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  overflow: hidden;
   width: 540px;
   height: 585px;
   background-image: url("../img/2_shoe_third_2.png");
   background-repeat: no-repeat;
   margin-top: 70px;
   position: relative;
+  background-size: cover;
   float: left;
   z-index: 10;
 }
@@ -760,16 +763,21 @@
 .main_discription_bottom_left_text {
   position: relative;
   color: white;
-  width: 290px;
+  width: 290px !important;
   margin: auto;
   margin-top: 40px;
+  margin-left: 160px;
   font-size: 25pt;
   font-family: 'Montserrat-Thin';
 }
 
+.main_discription_top_left_shoes_text {
+  width: 100px;
+}
+
 .left_shoes_text_second {
   margin-top: 15px;
-  margin-left: 135px;
+  margin-left: 165px;
   position: absolute;
 }
 
@@ -888,12 +896,12 @@
 
 .main_discription_top_left_shoes_add {
   width: 25px;
-  height: 90px;
+  height: 95px;
   background-image: url("../img/3_shoe_third_add.png");
   background-position: 10px 0px;
   background-size: cover;
   position: absolute;
-  margin-top: 187px;
+  margin-top: 210px;
   margin-left: -25px;
   z-index: 1;
 }
@@ -907,7 +915,7 @@
   background: #4bd8cd;
   font-family: 'TruenoBd';
   font-size: 11pt;
-  margin-top: 350px;
+  margin-top: 410px;
   margin-left: 140px;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -968,14 +976,14 @@
 }
 
 .main_discription_top_right_shoes {
-  width: 630px;
+  width: 640px;
   height: 255px;
   background-image: url("../img/4_shoe_second.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
   float: right;
-  margin-top: 40px;
+  margin-top: 42px;
 }
 
 .top_right_shoes_text {
@@ -1178,11 +1186,13 @@
   width: 295px;
   height: 295px;
   float: right;
-  margin-top: 20px;
+  margin-top: 43px;
   margin-left: 20px;
   background-image: url("../img/5_shoe_fourth.png");
   background-repeat: no-repeat;
   background-size: contain;
+  position: relative;
+  overflow: hidden;
 }
 
 .bottom_right_shoe_text {
@@ -1190,6 +1200,7 @@
   font-size: 25pt;
   color: #6b7072;
   text-align: center;
+  margin: auto;
   margin-top: 30px;
 }
 
@@ -1411,8 +1422,12 @@
   background-size: contain;
 }
 
-.main_discription_bottom_left_text {
+.main_discription_bottom_text_left {
   width: 112px;
+  color: white;
+  font-family: 'Montserrat-Thin';
+  font-size: 25pt;
+  margin: auto;
   margin-top: 190px;
 }
 
@@ -3096,14 +3111,6 @@ ul > li.slick-active:before {
   color: white;
 }
 
-.footer_row_two .footer_row_two_left .footer_row_two_left .footer_left_box_second {
-  background-position: -96px 2px;
-}
-
-.footer_row_two .footer_row_two_left .footer_row_two_left .footer_left_box_third {
-  background-position: -187px 0px;
-}
-
 .footer_row_two .footer_row_two_left .footer_row_two_left .footer_row_two_left_text_top,
 .footer_row_two .footer_row_two_left .footer_row_two_left .footer_row_two_left_text_bottom {
   position: absolute;
@@ -3716,6 +3723,12 @@ i:hover {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .main_discription_top_right_shoes {
+    height: 275px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .comments_box {
     width: 1200px;
@@ -3739,9 +3752,17 @@ i:hover {
 }
 
 @media screen and (max-width: 1024px) {
+  .header_nav {
+    width: 1024px;
+  }
+
   .welcome_words {
     font-size: 17pt;
     margin-left: 400px;
+  }
+
+  .header_undernav_wrap {
+    width: 1024px;
   }
 
   .header_undernav {
@@ -3757,7 +3778,7 @@ i:hover {
   }
 
   .undernav_cover {
-    max-width: 1024px;
+    width: 1024px;
   }
 
   .undernav_cover_img {
@@ -3770,9 +3791,6 @@ i:hover {
     padding-top: 30px;
     padding-left: 30px;
     width: 450px;
-  }
-
-  .undernav_cover_right {
     float: left;
   }
 
@@ -3842,11 +3860,16 @@ i:hover {
   .main_discription_bottom_right_shoes {
     width: 245px;
     height: 245px;
+    margin-top: 18px;
   }
 
-  .main_discription_bottom_left_text {
+  .main_discription_bottom_text_left {
     margin: auto;
     margin-top: 150px;
+  }
+
+  .bottom_left_word_second_shadow {
+    margin-left: 40px;
   }
 
   .main_discription_box_shoes_box {
@@ -3892,6 +3915,10 @@ i:hover {
     margin: -225px 245px !important;
   }
 
+  .corner {
+    margin: -225px 85px !important;
+  }
+
   .comments_box_post_face_text_second {
     margin-left: -415px !important;
   }
@@ -3925,6 +3952,7 @@ i:hover {
   .comments_box_of_people {
     height: 140px;
     margin-top: -210px;
+    margin-left: -5px;
   }
 
   .arrow_left,
@@ -3992,8 +4020,20 @@ i:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .header_nav {
+    width: 768px;
+  }
+
   .welcome_words {
     margin-left: 280px;
+  }
+
+  .header_undernav_wrap {
+    width: 768px;
+  }
+
+  .header_undernav {
+    width: 768px;
   }
 
   .logo_box {
@@ -4009,10 +4049,18 @@ i:hover {
     height: 350px;
   }
 
+  .undernav_cover {
+    width: 768px;
+  }
+
   .undernav_cover_img {
     width: 500px;
     height: 400px;
     margin-left: -100px;
+  }
+
+  .undernav_cover_right {
+    width: 41%;
   }
 
   .undernav_cover_right_text_fourth {
@@ -4021,6 +4069,280 @@ i:hover {
 
   .undernav_cover_button {
     margin-top: 50px;
+  }
+
+  .main_discription {
+    width: 768px;
+  }
+
+  .main_discription_top_left_shoes {
+    width: 340px;
+    height: 340px;
+    margin-top: 16px;
+    margin-left: 10px;
+  }
+
+  .main_discription_top_left_shoes_text,
+  .main_discription_bottom_left_text {
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 17pt;
+  }
+
+  .left_shoes_text_second {
+    margin-left: 90px;
+    font-size: 10pt;
+  }
+
+  .main_discription_top_left_shoes_button {
+    margin-left: 50px;
+    margin-top: 230px;
+  }
+
+  .main_discription_top_right_shoes {
+    width: 390px;
+    height: 150px;
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+
+  .top_right_shoes_text {
+    margin-left: 165px;
+    margin-top: 25px;
+    font-size: 19pt;
+  }
+
+  .top_right_shoes_word_box {
+    margin-left: 150px;
+  }
+
+  .top_right_shoes_word {
+    font-size: 19pt;
+  }
+
+  .main_discription_top_right_shoes_button {
+    margin-left: 160px;
+    margin-top: 8px;
+    height: 40px;
+  }
+
+  .main_discription_bottom_left_shoes,
+  .main_discription_bottom_right_shoes {
+    width: 177px;
+    height: 177px;
+    margin-top: 28px;
+    margin-left: 8px;
+    float: left;
+  }
+
+  .main_discription_bottom_left_shoes {
+    margin-right: 10px;
+    margin-left: 35px;
+  }
+
+  .bottom_right_shoe_text {
+    margin-top: 10px;
+  }
+
+  .bottom_right_shoe_text_box {
+    width: 125px;
+  }
+
+  .bottom_right_word {
+    font-size: 19pt;
+  }
+
+  .main_discription_bottom_text_left {
+    margin-top: 110px;
+    margin-left: 50px;
+    font-size: 17pt;
+  }
+
+  .bottom_left_word_second {
+    font-size: 17pt;
+    margin-left: 30px;
+    width: 100px;
+  }
+
+  .bottom_left_word_second_shadow {
+    margin-top: -23px;
+    margin-left: 30px;
+    width: 100px;
+  }
+
+  .main_discription_box_shoes_row {
+    width: 750px;
+    margin-left: 10px;
+  }
+
+  .main_discription_box_shoes_one,
+  .main_discription_box_shoes_three,
+  .main_discription_box_shoes_two {
+    width: 768px;
+    margin-left: -80px;
+    height: 600px;
+  }
+
+  .main_discription_box_shoes_one .box_shoes,
+  .main_discription_box_shoes_three .box_shoes,
+  .main_discription_box_shoes_two .box_shoes {
+    width: 180px;
+    height: 230px;
+    background-size: 150px 150px;
+    background-position: 10px 35px;
+  }
+
+  .box_shoes_third_price {
+    margin: 100px 0 0 10px;
+    font-size: 10pt !important;
+  }
+
+  .box_shoes_fourth_price {
+    font-size: 8pt !important;
+  }
+
+  .main_discription_box_brands {
+    width: 768px;
+    margin-top: 580px;
+  }
+
+  .main_discription_box_brands .box_brands {
+    background-size: 700%;
+  }
+
+  .main_discription_box_brands .box_brands_1 {
+    background-position: 35px 25px;
+  }
+
+  .main_discription_box_brands .box_brands_2 {
+    background-position: -115px 20px;
+  }
+
+  .main_discription_box_brands .box_brands_3 {
+    background-position: -280px 20px;
+  }
+
+  .main_discription_box_brands .box_brands_4 {
+    background-position: -420px 20px;
+  }
+
+  .main_discription_box_brands .box_brands_5 {
+    background-position: -580px 20px;
+  }
+
+  .main_discription_box_brands .box_brands_6 {
+    background-position: -750px 15px;
+  }
+
+  .comments_box {
+    width: 768px;
+  }
+
+  .comments_box_post .comments_box_post_face .comments_box_post_face_text {
+    width: 700px;
+    margin-left: -25px;
+  }
+
+  .comments_box_post .comments_box_post_face .comments_box_post_face_text .face_text {
+    font-size: 11pt;
+  }
+
+  .comments_box_post_face_text_second {
+    margin-left: -250px !important;
+  }
+
+  .corner_second {
+    margin: -225px 310px !important;
+  }
+
+  .comments_box_post_face_text_third {
+    margin-left: -485px !important;
+  }
+
+  .corner_third {
+    margin: -175px 545px !important;
+  }
+
+  .slider {
+    width: 768px;
+  }
+
+  .slick {
+    width: 768px;
+    margin-left: -50px;
+  }
+
+  .slider_comments_box {
+    height: 130px;
+    margin-top: -150px;
+  }
+
+  .comments_box_of_people {
+    height: 190px;
+    margin-top: -300px;
+  }
+
+  .maindots {
+    margin-top: 20px;
+    z-index: 10000;
+  }
+
+  .help_wrap {
+    width: 768px;
+    margin-top: 110px;
+  }
+
+  .box_help {
+    width: 768px;
+    margin: -30;
+  }
+
+  .box_help_button {
+    margin: 120px 500px;
+  }
+
+  .footer {
+    width: 768px;
+    height: 710px;
+  }
+
+  .footer_row_one,
+  .footer_row_two {
+    width: 768px;
+  }
+
+  .footer_row_two {
+    height: 400px;
+  }
+
+  .footer_row_two_right {
+    height: 400px;
+  }
+
+  .footer_row_two_right .footer_row_two_right_col {
+    height: 400px;
+    width: 110px;
+    padding: 70px 0px;
+  }
+
+  .footer_row_two_right .footer_row_two_right_col .footer_row_two_right_col_ul {
+    font-size: 8pt;
+  }
+
+  .underfooter {
+    width: 768px;
+  }
+
+  .underfooter_left {
+    display: none;
+  }
+
+  .underfooter_center {
+    margin-left: -100px;
+  }
+
+  .underfooter_right {
+    margin-left: -50px;
   }
 }
 
@@ -4059,14 +4381,20 @@ i:hover {
     margin-left: 1px;
   }
 
+  .undernav_cover {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
   .undernav_cover_left {
-    width: 10%;
+    max-width: 10%;
+    overflow: hidden;
   }
 
   .undernav_cover_img {
     opacity: 0.2;
-    width: 470px;
-    height: 330px;
+    max-width: 450px;
+    height: 335px;
     margin-top: 18px;
     margin-left: 0px;
   }
@@ -4076,10 +4404,197 @@ i:hover {
     padding-top: 50px;
   }
 
+  .main_discription {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .main_discription_top_left_shoes {
+    width: 90%;
+    height: 340px;
+    margin-top: 16px;
+    margin-left: 5%;
+  }
+
+  .main_discription_top_left_shoes_text,
+  .main_discription_bottom_left_text {
+    width: 230px;
+  }
+
+  .main_discription_top_left_shoes_button {
+    margin-left: 65px;
+    margin-top: 230px;
+  }
+
+  .main_discription_top_right_shoes {
+    float: left;
+    width: 95%;
+  }
+
+  .main_discription_bottom_left_shoes,
+  .main_discription_bottom_right_shoes {
+    margin-left: 15px;
+  }
+
+  .main_discription_bottom_left_shoes {
+    float: right;
+    margin-right: 20px;
+  }
+
+  .main_discription_box_shoes_box {
+    display: none;
+  }
+
+  .main_discription_box_shoes_one,
+  .main_discription_box_shoes_three,
+  .main_discription_box_shoes_two {
+    display: none;
+  }
+
+  .main_discription_box_brands {
+    display: none;
+  }
+
   .top_menu_425,
   .under_nav_425 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main_discription_top_left_shoes_text,
+  .main_discription_bottom_left_text {
+    width: 190px !important;
+  }
+
+  .left_shoes_text_second {
+    width: 250px !important;
+  }
+
+  .left_shoes_word_second {
+    font-size: 25pt;
+  }
+
+  .top_right_shoes_text {
+    margin-left: 40%;
+  }
+
+  .top_right_shoes_word_box {
+    margin-left: 35%;
+  }
+
+  .main_discription_top_right_shoes_button {
+    margin-left: 35%;
+  }
+
+  .main_discription_bottom_left_shoes,
+  .main_discription_bottom_right_shoes {
+    width: 155px;
+    height: 145px;
+  }
+
+  .main_discription_bottom_left_shoes {
+    margin-right: 10px;
+  }
+
+  .bottom_right_shoe_text {
+    margin-top: 10px;
+    font-size: 15pt;
+  }
+
+  .bottom_right_shoe_text_box {
+    width: 100px;
+  }
+
+  .bottom_right_word {
+    font-size: 15pt;
+  }
+
+  .main_discription_bottom_text_left {
+    width: 80px !important;
+    margin: auto;
+    margin-top: 80px;
+  }
+
+  .bottom_left_word_shoes {
+    margin-left: -15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .undernav_cover_right {
+    width: 90%;
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+
+  .undernav_cover_button {
+    margin-top: 30px;
+    margin-left: 0%;
+  }
+
+  .main_discription_top_left_shoes_text,
+  .main_discription_bottom_left_text {
+    margin-left: 75px;
+  }
+
+  .left_shoes_text_second {
+    margin-left: 95px;
+  }
+
+  .left_shoes_word_second {
+    font-size: 15pt;
+  }
+
+  .main_discription_top_left_shoes_button {
+    margin-left: 15%;
+    margin-top: 230px;
+    width: 200px;
+    height: 40px;
+  }
+
+  .top_right_shoes_text {
+    margin-left: 155px;
+    margin-top: 30px;
+    font-size: 12pt;
+  }
+
+  .top_right_shoes_word_box {
+    margin-left: 130px;
+  }
+
+  .top_right_shoes_word {
+    font-size: 14pt;
+  }
+
+  .main_discription_top_right_shoes_button {
+    width: 130px;
+    height: 40px;
+    margin-left: 145px;
+    margin-top: 8px;
+    height: 40px;
+  }
+
+  .main_discription_bottom_left_shoes,
+  .main_discription_bottom_right_shoes {
+    width: 130px;
+    height: 130px;
+  }
+
+  .main_discription_bottom_left_shoes {
+    margin-right: 15px;
+  }
+
+  .main_discription_bottom_text_left {
+    margin-top: 70px;
+  }
+
+  .bottom_left_word_shoes {
+    margin-left: -20px;
   }
 }

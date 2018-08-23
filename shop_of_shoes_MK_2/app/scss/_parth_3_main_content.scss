@@ -15,9 +15,18 @@ width: 1200px;
 height: inherit;
 margin: auto;
 background: #f0efee;
+position: relative;
 @media screen and (max-width: 1024px){
-  max-width: 1024px;
+  width: 1024px;
   }
+@media screen and (max-width: 768px){
+  width: 768px
+  }
+  @media screen and (max-width: 425px){
+    max-width: 100%;
+    overflow: hidden;
+    }
+
 }
 
 .undernav_cover_left{
@@ -26,7 +35,8 @@ background: #f0efee;
   background: #f0efee;
   float: left;
   @media screen and (max-width: 425px){
-    width: 10%;
+    max-width: 10%;
+    overflow: hidden;
   }
 
 }
@@ -49,8 +59,8 @@ background: #f0efee;
   }
   @media screen and (max-width: 425px){
     opacity: 0.2;
-    width: 470px;
-    height: 330px;
+    max-width: 450px;
+    height: 335px;
     margin-top: 18px;
     margin-left: 0px;
   }
@@ -65,13 +75,20 @@ background: #f0efee;
     padding-top: 30px;
     padding-left: 30px;
     width: 450px;
-  }
-  @media screen and (max-width: 1024px){
     float: left;
+  }
+  @media screen and (max-width: 768px){
+    width: 41%;
   }
   @media screen and (max-width: 425px){
     width: 90%;
     padding-top: 50px;
+  }
+  @media screen and (max-width: 320px){
+    width: 90%;
+    padding-top: 30px;
+    padding-left: 10px;
+
   }
 }
 
@@ -131,6 +148,10 @@ background: #f0efee;
   @media screen and (max-width: 768px){
     margin-top: 50px;
   }
+  @media screen and (max-width: 320px){
+    margin-top: 30px;
+    margin-left: 0%;
+  }
       &::before{
       content: "";
       width: 250px;
@@ -186,45 +207,96 @@ background: #f0efee;
   @media screen and (max-width: 1024px){
     width: 1000px;
   }
+  @media screen and (max-width: 768px){
+    width: 768px;
+  }
+  @media screen and (max-width: 425px){
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+  }
 }
 
 
 //MAIN PICTURE
 .main_discription_top_left_shoes {
   box-sizing: border-box;
+  overflow: hidden;
   width: 540px;
   height: 585px;
   background-image: url("../img/2_shoe_third_2.png");
   background-repeat: no-repeat;
   margin-top: 70px;
   position: relative;
+  background-size: cover;
   float: left;
   z-index: 10;
   @media screen and (max-width: 1024px){
     width: 440px;
     height: 440px;
   }
+  @media screen and (max-width: 768px){
+    width: 340px;
+    height: 340px;
+    margin-top: 16px;
+    margin-left: 10px;
+  }
+  @media screen and (max-width: 425px){
+    width: 90%;
+    height: 340px;
+    margin-top: 16px;
+    margin-left: 5%;
+  }
 }
 .main_discription_top_left_shoes_text,
 .main_discription_bottom_left_text{
   position: relative;
   color: white;
-  width: 290px;
+  width: 290px !important;
   margin: auto;
   margin-top: 40px;
+  margin-left: 160px;
   font-size: 25pt;
   font-family: 'Montserrat-Thin';
   @media screen and (max-width: 1024px){
     margin-left: 120px;
   }
+  @media screen and (max-width: 768px){
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 17pt;
+  }
+  @media screen and (max-width: 425px){
+    width: 230px;
+  }
+  @media screen and (max-width: 375px){
+    width: 190px !important;
+  }
+  @media screen and (max-width: 320px){
+    margin-left: 75px;
+  }
+}
+.main_discription_top_left_shoes_text{
+  width: 100px;
 }
 
 .left_shoes_text_second{
   margin-top: 15px;
-  margin-left: 135px;
+  margin-left: 165px;
   position: absolute;
   @media screen and (max-width: 1024px){
     margin-left: 130px;
+  }
+  @media screen and (max-width: 768px){
+    margin-left: 90px;
+    font-size: 10pt;
+  }
+  @media screen and (max-width: 375px){
+    width: 250px !important;
+  }
+  @media screen and (max-width: 320px){
+    margin-left: 95px;
   }
 }
 .left_shoes_word_second{
@@ -238,6 +310,12 @@ background: #f0efee;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  @media screen and (max-width: 375px){
+    font-size: 25pt;
+  }
+  @media screen and (max-width: 320px){
+    font-size: 15pt;
+  }
   &:nth-child(1){
     animation-delay: 0.3s;
   }
@@ -292,12 +370,12 @@ background: #f0efee;
 
   .main_discription_top_left_shoes_add {
     width: 25px;
-    height: 90px;
+    height: 95px;
     background-image: url("../img/3_shoe_third_add.png");
     background-position: 10px 0px;
     background-size: cover;
     position: absolute;
-    margin-top: 187px;
+    margin-top: 210px;
     margin-left: -25px;
     z-index: 1;
     @media screen and (max-width: 1024px){
@@ -315,7 +393,7 @@ background: #f0efee;
   background: #4bd8cd;
   font-family: 'TruenoBd';
   font-size: 11pt;
-  margin-top: 350px;
+  margin-top: 410px;
   margin-left: 140px;
   transition: 1s;
   position: relative;
@@ -326,6 +404,20 @@ background: #f0efee;
   @media screen and (max-width: 1024px){
     margin-top: 270px;
     margin-left: 100px;
+  }
+  @media screen and (max-width: 768px){
+    margin-left: 50px;
+    margin-top: 230px;
+  }
+  @media screen and (max-width: 425px){
+    margin-left: 65px;
+    margin-top: 230px;
+  }
+  @media screen and (max-width: 320px){
+    margin-left: 15%;
+    margin-top: 230px;
+    width: 200px;
+    height: 40px;
   }
 
   &::before {
@@ -373,23 +465,36 @@ background: #f0efee;
 // TOP_RIGHT_PICTURE
 
 .main_discription_top_right_shoes {
-  width: 630px;
+  width: 640px;
   height: 255px;
   background-image: url("../img/4_shoe_second.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
   float: right;
-  margin-top: 40px;
+  margin-top: 42px;
+  @media screen and (min-width: 1440px){
+    height: 275px;
+  }
   @media screen and (max-width: 1024px){
     width: 530px;
     height: 200px;
     margin-top: 47px;
   }
+  @media screen and (max-width: 768px){
+    width: 390px;
+    height: 150px;
+    margin-top: 0px;
+    margin-right: 10px;
+  }
+  @media screen and (max-width: 425px){
+    float: left;
+    width: 95%;
+    // margin-left: 1%;
+  }
 }
 
 .top_right_shoes_text{
-  // width: 200px;
   margin-left: 315px;
   margin-top: 60px;
   font-size: 25pt;
@@ -398,6 +503,19 @@ background: #f0efee;
   @media screen and (max-width: 1024px){
     margin-left: 245px;
     margin-top: 50px;
+  }
+  @media screen and (max-width: 768px){
+    margin-left: 165px;
+    margin-top: 25px;
+    font-size: 19pt;
+  }
+  @media screen and (max-width: 375px){
+    margin-left: 40%;
+  }
+  @media screen and (max-width: 320px){
+    margin-left: 155px;
+    margin-top: 30px;
+    font-size: 12pt;
   }
 }
 
@@ -409,6 +527,15 @@ background: #f0efee;
   flex-direction: row;
   @media screen and (max-width: 1024px){
     margin-left: 225px;
+  }
+  @media screen and (max-width: 768px){
+    margin-left: 150px;
+  }
+  @media screen and (max-width: 375px){
+    margin-left: 35%;
+  }
+  @media screen and (max-width: 320px){
+    margin-left: 130px;
   }
 }
 
@@ -422,6 +549,12 @@ background: #f0efee;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   text-shadow: 0px 11px 15px rgba(255, 255, 255, 0);
+  @media screen and (max-width: 768px){
+    font-size: 19pt;
+  }
+  @media screen and (max-width: 320px){
+    font-size: 14pt;
+  }
   &:nth-child(2){
     animation-delay: 0.1s;
   }
@@ -491,6 +624,21 @@ background: #f0efee;
       margin-top: 15px;
       height: 45px;
     }
+    @media screen and (max-width: 768px){
+      margin-left: 160px;
+      margin-top: 8px;
+      height: 40px;
+    }
+    @media screen and (max-width: 375px){
+      margin-left: 35%;
+    }
+    @media screen and (max-width: 320px){
+      width: 130px;
+      height: 40px;
+      margin-left: 145px;
+      margin-top: 8px;
+      height: 40px;
+    }
 
     &::before {
       content: "";
@@ -543,14 +691,56 @@ background: #f0efee;
   width: 295px;
   height: 295px;
   float: right;
-  margin-top: 20px;
+  margin-top: 43px;
   margin-left: 20px;
   background-image: url("../img/5_shoe_fourth.png");
   background-repeat: no-repeat;
   background-size: contain;
+  position: relative;
+  overflow: hidden;
+  // @media screen and (min-width: 1440px){
+  //   margin-top: 45px;
+  // }
+
   @media screen and (max-width: 1024px){
     width: 245px;
     height: 245px;
+    margin-top: 18px;
+  }
+  @media screen and (max-width: 768px){
+    width: 177px;
+    height: 177px;
+    margin-top: 28px;
+    margin-left: 8px;
+    float:left;
+  }
+  @media screen and (max-width: 425px){
+    margin-left: 15px;
+  }
+  @media screen and (max-width: 375px){
+    width: 155px;
+    height: 145px;
+  }
+  @media screen and (max-width: 320px){
+    width: 130px;
+    height: 130px;
+  }
+
+}
+.main_discription_bottom_left_shoes{
+  @media screen and (max-width: 768px){
+    margin-right: 10px;
+    margin-left: 35px;
+  }
+  @media screen and (max-width: 425px){
+    float: right;
+    margin-right: 20px;
+  }
+  @media screen and (max-width: 375px){
+    margin-right: 10px;
+  }
+  @media screen and (max-width: 320px){
+    margin-right: 15px;
   }
 }
 
@@ -559,7 +749,15 @@ background: #f0efee;
   font-size: 25pt;
   color: #6b7072;
   text-align: center;
+  margin: auto;
   margin-top: 30px;
+  @media screen and (max-width: 768px){
+    margin-top:10px;
+  }
+  @media screen and (max-width: 375px){
+    margin-top:10px;
+    font-size: 15pt;
+  }
 }
 .bottom_right_shoe_text_box{
   display: flex;
@@ -569,6 +767,12 @@ background: #f0efee;
   width: 170px;
   color: white;
   margin: auto;
+  @media screen and (max-width: 768px){
+    width: 125px;
+  }
+  @media screen and (max-width: 375px){
+    width: 100px;
+  }
 }
 .bottom_right_word{
   font-family: 'TruenoSBd';
@@ -576,6 +780,12 @@ background: #f0efee;
   animation-fill-mode: backwards;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  @media screen and (max-width: 768px){
+    font-size: 19pt;
+  }
+  @media screen and (max-width: 375px){
+    font-size: 15pt;
+  }
 }
 .bottom_right_word_4,
 .bottom_right_word_7,
@@ -667,19 +877,45 @@ background: #f0efee;
   background-repeat: no-repeat;
   background-size: contain;
 }
-.main_discription_bottom_left_text{
+
+
+.main_discription_bottom_text_left{
   width: 112px;
+  color: white;
+  font-family: 'Montserrat-Thin';
+  font-size: 25pt;
+  margin: auto;
   margin-top: 190px;
   @media screen and (max-width: 1024px){
     margin: auto;
     margin-top: 150px;
+  }
+  @media screen and (max-width: 768px){
+    margin-top: 110px;
+    margin-left: 50px;
+    font-size: 17pt;
+  }
+  @media screen and (max-width: 375px){
+    width: 80px !important;
+    margin: auto;
+    margin-top: 80px;
+  }
+  @media screen and (max-width: 320px){
+    margin-top: 70px;
   }
 }
 .bottom_left_word_shoes{
   position: relative;
   margin: auto;
   margin-top: 10px;
+  @media screen and (max-width: 375px){
+    margin-left: -15px;
+  }
+  @media screen and (max-width: 320px){
+    margin-left: -20px;
+  }
 }
+
 .bottom_left_word_second{
   color: #ff7373 !important;
   font-size: 15pt;
@@ -693,6 +929,11 @@ background: #f0efee;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  @media screen and (max-width: 768px){
+    font-size: 17pt;
+    margin-left: 30px;
+    width: 100px;
+  }
 }
 @keyframes word_under_shadow {
   0%{}
@@ -721,6 +962,14 @@ background: #f0efee;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  @media screen and (max-width: 1024px){
+    margin-left: 40px;
+  }
+  @media screen and (max-width: 768px){
+    margin-top: -23px;
+    margin-left: 30px;
+    width: 100px;
+  }
 }
 
 @keyframes word_shadow {
@@ -747,7 +996,7 @@ background: #f0efee;
 }
 
 
-// UNDER PICTURE
+// LABLE
 
 .main_discription_box_shoes_box{
   margin: auto;
@@ -755,9 +1004,11 @@ background: #f0efee;
   width:610px;
 
   @media screen and (max-width: 1024px){
-    // width:768px;
     margin: auto;
     margin-top: 50px;
+  }
+  @media screen and (max-width: 425px){
+    display: none;
   }
 }
 
@@ -768,6 +1019,10 @@ background: #f0efee;
   width: 1200px;
   @media screen and (max-width: 1024px){
     width: 1000px;
+  }
+  @media screen and (max-width: 768px){
+    width: 750px;
+    margin-left: 10px;
   }
 }
 //
@@ -787,6 +1042,14 @@ background: #f0efee;
     width: 1000px;
     margin-left: -195px;
   }
+  @media screen and (max-width: 768px){
+    width: 768px;
+    margin-left: -80px;
+    height: 600px;
+  }
+  @media screen and (max-width: 425px){
+    display: none;
+  }
 
 
   & .box_shoes {
@@ -803,6 +1066,12 @@ background: #f0efee;
     @media screen and (max-width: 1024px){
       width: 240px;
     }
+    @media screen and (max-width: 768px){
+      width: 180px;
+      height: 230px;
+      background-size: 150px 150px;
+      background-position: 10px 35px;
+      }
   }
 }
 //
@@ -829,9 +1098,6 @@ label {
   font-size: 21pt;
   margin: auto;
   color: #bdb9b5;
-  @media screen and (max-width: 1024px){
-
-  }
 }
 //
 .label_one {
@@ -906,10 +1172,17 @@ label {
 .box_shoes_third_price{
   font-family: 'TruenoBd';
   margin: 180px 0 0 10px;
+  @media screen and (max-width: 768px){
+    margin: 100px 0 0 10px;
+    font-size: 10pt !important;
+  }
 }
 .box_shoes_fourth_price{
   margin: 5px 0 0 10px;
   line-height: 20px;
+  @media screen and (max-width: 768px){
+    font-size: 8pt !important;
+  }
 }
 .box_shoes_fifth_price{
  margin: 10px 0 0 10px;
@@ -945,29 +1218,57 @@ label {
   @media screen and (max-width: 1024px){
     width: 1000px;
   }
+  @media screen and (max-width: 768px){
+    width: 768px;
+    margin-top: 580px;
+  }
+  @media screen and (max-width: 425px){
+    display: none;
+  }
   & .box_brands{
     width: 170px;
     height: 170px;
     margin-top: 10px;
     background-image: url(../img/15_sprite_brands.png);
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px){
+      background-size: 700%;
+    }
   }
   & .box_brands_1{
     background-position: 35px 25px;
+    @media screen and (max-width: 768px){
+      background-position: 35px 25px;
+    }
   }
   & .box_brands_2{
     background-position: -120px 30px;
+    @media screen and (max-width: 768px){
+      background-position: -115px 20px;
+    }
   }
   & .box_brands_3{
     background-position: -300px 30px;
+    @media screen and (max-width: 768px){
+      background-position: -280px 20px;
+    }
   }
   & .box_brands_4{
     background-position: -480px 30px;
+    @media screen and (max-width: 768px){
+      background-position: -420px 20px;
+    }
   }
   & .box_brands_5{
     background-position: -670px 30px;
+    @media screen and (max-width: 768px){
+      background-position: -580px 20px;
+    }
   }
   & .box_brands_6{
     background-position: -850px 30px;
+    @media screen and (max-width: 768px){
+      background-position: -750px 15px;
+    }
   }
 }

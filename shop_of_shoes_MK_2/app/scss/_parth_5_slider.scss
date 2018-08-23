@@ -128,18 +128,21 @@
 }
 
 
+
+
+
 // SLIDER
 
 .slider{
   width: 1200px;
   height: 350px;
   margin: auto;
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: space-around;
   margin-bottom: 50px !important;
   @media screen and (max-width: 1024px){
     width: 1024px;
+  }
+  @media screen and (max-width: 768px){
+    width: 768px;
   }
 }
 
@@ -161,6 +164,11 @@
   @media screen and (max-width: 1024px){
     width: 250px;
     height: 250px;
+  }
+  @media screen and (max-width: 768px){
+    width: 768px;
+    // height: 100px;
+    margin-left: -50px;
   }
   &:hover > .slider_comments_box{
     background: rgba(0, 0, 0, .7);
@@ -192,6 +200,10 @@ background-image: url(../img/slider_1_sneakers_1.png);
   color: white;
   @media screen and (max-width: 1024px){
     height: 90%;
+  }
+  @media screen and (max-width: 768px){
+    height: 130px;
+    margin-top: -150px;
   }
 }
 
@@ -253,7 +265,13 @@ background-image: url(../img/slider_1_sneakers_1.png);
   @media screen and (max-width: 1024px){
     height: 140px;
     margin-top: -210px;
+    margin-left: -5px;
   }
+  @media screen and (max-width: 768px){
+    height: 190px;
+    margin-top: -300px;
+  }
+
   .bg_comments_box_of_people{
       width: 100%;
       height: 100%;
@@ -320,6 +338,10 @@ margin-left: 10px;
   width: 200px;
   margin: auto;
   margin-top: 40px;
+  @media screen and (max-width: 768px){
+    margin-top: 20px;
+    z-index: 10000;
+  }
 }
 .maindots > li{
   width: 21px;
@@ -363,6 +385,10 @@ ul > li.slick-active:before {
   @media screen and (max-width: 1024px){
     width: 1024px;
   }
+  @media screen and (max-width: 768px){
+    width: 768px;
+    margin-top: 110px;
+  }
 }
 .box_help {
   width: 1200px;
@@ -371,6 +397,10 @@ ul > li.slick-active:before {
   margin: auto;
   @media screen and (max-width: 1024px){
     width: 1024px;
+  }
+  @media screen and (max-width: 768px){
+    width: 768px;
+    margin: -30;
   }
 
   .box_help_message {
@@ -593,7 +623,7 @@ cursor: pointer;
 }
 
 
-
+// BUTTON
 
 .box_help_button {
   width: 250px;
@@ -611,6 +641,9 @@ cursor: pointer;
   cursor: pointer;
   @media screen and (max-width: 1024px){
     margin: 120px 645px;
+  }
+  @media screen and (max-width: 768px){
+    margin: 120px 500px;
   }
   &:before{
     width: 300px;
