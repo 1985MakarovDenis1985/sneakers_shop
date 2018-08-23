@@ -489,8 +489,8 @@ position: relative;
   }
   @media screen and (max-width: 425px){
     float: left;
-    width: 95%;
-    // margin-left: 1%;
+    margin-left: 2px;
+    width: 94.5%;
   }
 }
 
@@ -698,9 +698,6 @@ position: relative;
   background-size: contain;
   position: relative;
   overflow: hidden;
-  // @media screen and (min-width: 1440px){
-  //   margin-top: 45px;
-  // }
 
   @media screen and (max-width: 1024px){
     width: 245px;
@@ -715,14 +712,15 @@ position: relative;
     float:left;
   }
   @media screen and (max-width: 425px){
-    margin-left: 15px;
+    margin-left: 20px;
+    width: 170px;
   }
   @media screen and (max-width: 375px){
-    width: 155px;
+    width: 151px;
     height: 145px;
   }
   @media screen and (max-width: 320px){
-    width: 130px;
+    width: 129px;
     height: 130px;
   }
 
@@ -876,6 +874,12 @@ position: relative;
   background-image: url("../img/6_shoe_fift.png");
   background-repeat: no-repeat;
   background-size: contain;
+  @media screen and (max-width: 425px){
+    margin-left: 20px;
+  }
+  @media screen and (max-width: 375px){
+    margin-left: 17px;
+  }
 }
 
 

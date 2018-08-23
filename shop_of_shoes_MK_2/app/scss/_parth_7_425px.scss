@@ -175,3 +175,72 @@
     background: #472424;
   }
 }
+
+
+// BOX_SHOES_425
+
+.main_discription_box_shoes_425px{
+  display: none;
+  width: 100%;
+  height: 210px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  @media screen and (max-width: 425px){
+    display: block;
+  }
+}
+
+.box_shoes_425px_bg{
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  background-image: url(../img/29_jog.jpg);
+  filter: grayscale(100%) sepia(100%);
+  z-index: -1;
+  background-size: cover;
+  opacity: 0.2 !important;
+}
+
+.shoes_425px{
+  box-sizing: border-box;
+  // border: 1px solid black;
+  width: 100%;
+  height: 70px;
+  font-family: 'TruenoSBd';
+  font-size: 23pt;
+  color: #623232;
+  padding-left: 10px;
+  text-align: right;
+  margin-left: -40px;
+  padding-top: 20px;
+}
+
+.shoes_425px_shadow{
+  position: relative;
+  opacity: 1;
+  cursor: pointer;
+  animation-duration: 0.3s;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+  z-index: 100;
+  margin-top: -30px;
+  &:hover{
+    animation-name: shoes_425px_shadow;
+  }
+}
+
+@keyframes shoes_425px_shadow {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.7;
+    margin-right: 100px;
+  }
+  100%{
+    margin-right: 200px;
+    opacity: 0;
+  }
+}
