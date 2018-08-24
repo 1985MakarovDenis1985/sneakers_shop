@@ -224,18 +224,18 @@
     margin-top: -100px;
   }
 
-  30% {
+  10% {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
   }
 
-  45% {
+  25% {
     -webkit-transform: scaleY(0.5);
     transform: scaleY(0.5);
     margin-top: 25px;
   }
 
-  60% {
+  40% {
     margin-top: 5px;
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
@@ -254,18 +254,18 @@
     margin-top: -100px;
   }
 
-  30% {
+  10% {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
   }
 
-  45% {
+  25% {
     -webkit-transform: scaleY(0.5);
     transform: scaleY(0.5);
     margin-top: 25px;
   }
 
-  60% {
+  40% {
     margin-top: 5px;
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
@@ -2964,7 +2964,7 @@ ul > li.slick-active:before {
 
 .box_help_button:hover::after {
   margin-left: -230px;
-  margin-top: -30px;
+  margin-top: -25px;
 }
 
 .box_help_button:hover {
@@ -3033,8 +3033,7 @@ ul > li.slick-active:before {
   justify-content: space-between;
 }
 
-.footer_row_one .footer_row_one_item,
-.footer_row_two .footer_row_one_item {
+.footer_row_one_item {
   width: 130px;
   height: 150px;
   margin-top: 50px;
@@ -3047,8 +3046,7 @@ ul > li.slick-active:before {
   color: white;
 }
 
-.footer_row_one .footer_row_one_item p,
-.footer_row_two .footer_row_one_item p {
+.footer_row_one_item p {
   margin-top: 80px;
 }
 
@@ -3091,7 +3089,7 @@ ul > li.slick-active:before {
 }
 
 .footer_row_two .footer_row_two_left .footer_row_two_left {
-  width: 320px;
+  width: 300px;
   height: 90px;
   position: relative;
 }
@@ -4441,6 +4439,16 @@ i:hover {
   }
 }
 
+@media screen and (max-width: 452px) {
+  .box_help_button {
+    position: relative;
+    width: 290px;
+    margin: auto;
+    margin-top: 110px;
+    margin-left: 14%;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .header_nav_wrap {
     display: none;
@@ -4590,7 +4598,8 @@ i:hover {
   }
 
   .comments_box_post .comments_box_post_face .post_face_stars {
-    width: 100px;
+    width: 80px;
+    font-size: 13px;
   }
 
   .comments_box_post .comments_box_post_face .comments_box_post_face_text {
@@ -4620,6 +4629,94 @@ i:hover {
 
   .comments_box_post_face_text_third {
     margin-left: -62% !important;
+  }
+
+  .slider {
+    width: 100%;
+    height: 265px;
+  }
+
+  .slick {
+    width: 120%;
+  }
+
+  .slider_comments_box {
+    height: 100px;
+    margin-top: -65px;
+  }
+
+  .comments_box_of_people {
+    height: 120px;
+    margin-top: -205px;
+  }
+
+  .help_wrap {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .box_help {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .box_help .box_help_message {
+    margin-top: 10px;
+    width: 300px;
+  }
+
+  .box_help .box_help_message .box_help_message_bottom_text,
+  .box_help .box_help_message .box_help_message_top_text {
+    font-size: 12pt;
+  }
+
+  .box_help .box_help_message .box_help_message_bottom_text {
+    font-size: 10pt;
+    margin-top: 10px;
+  }
+
+  .message_top_text_second {
+    font-size: 12pt;
+    margin-top: -15px;
+  }
+
+  .footer {
+    width: 100%;
+    height: 500px;
+  }
+
+  .footer_row_one {
+    display: none !important;
+  }
+
+  .footer_row_two {
+    height: 300px;
+    width: 100%;
+  }
+
+  .footer_row_two_right {
+    display: none;
+  }
+
+  .underfooter {
+    width: 100%;
+  }
+
+  .underfooter_center {
+    margin-top: 100px;
+    width: 300px;
+    margin-left: 20px;
+    font-size: 10pt;
+  }
+
+  .underfooter_right {
+    width: 300px;
+    margin-left: -330px;
+    float: left;
   }
 
   .top_menu_425,
@@ -4696,6 +4793,24 @@ i:hover {
   .bottom_left_word_shoes {
     margin-left: -15px;
   }
+
+  .slider_comments_box {
+    margin-top: -40px;
+  }
+
+  .comments_box_of_people {
+    height: 120px;
+    margin-top: -200px;
+  }
+
+  .box_help .box_help_message {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .box_help_button {
+    margin-left: 7%;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -4768,5 +4883,29 @@ i:hover {
 
   .bottom_left_word_shoes {
     margin-left: -20px;
+  }
+
+  .over_slider_text,
+  .over_slider_text_shadow {
+    font-size: 21pt;
+    width: 250px;
+  }
+
+  .over_slider_text_shadow {
+    font-size: 21pt;
+    width: 270px !important;
+    margin-top: -40px;
+  }
+
+  .slider_comments_box {
+    margin-top: -10px;
+  }
+
+  .box_help .box_help_message {
+    margin-left: 0px;
+  }
+
+  .box_help_button {
+    margin-left: 1%;
   }
 }
