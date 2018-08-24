@@ -1,13 +1,8 @@
 @font-face {
-  font-family: 'TruenoLt';
-  src: url("../fonts/TruenoLt.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'myriadpro-regular';
   src: url("../fonts/MyriadPro/myriadpro-regular.ttf");
+  src: url("../fonts/MyriadPro/myriadpro-regular.eot");
+  src: url("../fonts/MyriadPro/myriadpro-regular.woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -15,6 +10,8 @@
 @font-face {
   font-family: 'Montserrat-Thin';
   src: url("../fonts/Montserrat/Montserrat-Thin.ttf");
+  src: url("../fonts/Montserrat/Montserrat-Thin.eot");
+  src: url("../fonts/Montserrat/Montserrat-Thin.woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -22,6 +19,9 @@
 @font-face {
   font-family: 'TruenoBdOl';
   src: url("../fonts/trueno/TruenoBdOl.otf");
+  src: url("../fonts/trueno/TruenoBdOl.ttf");
+  src: url("../fonts/trueno/TruenoBdOl.eot");
+  src: url("../fonts/trueno/TruenoBdOl.woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -29,13 +29,19 @@
 @font-face {
   font-family: 'TruenoSBd';
   src: url("../fonts/trueno/TruenoSBd.otf");
+  src: url("../fonts/trueno/TruenoSBd.ttf");
+  src: url("../fonts/trueno/TruenoSBd.eot");
+  src: url("../fonts/trueno/TruenoSBd.woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TruenoBd';
+  src: url("../fonts/trueno/TruenoBd.ttf");
   src: url("../fonts/trueno/TruenoBd.otf");
+  src: url("../fonts/trueno/TruenoBd.eot");
+  src: url("../fonts/trueno/TruenoBd.woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -43,13 +49,18 @@
 @font-face {
   font-family: 'TruenoLt';
   src: url("../fonts/trueno/TruenoLt.otf");
+  src: url("../fonts/trueno/TruenoLt.eot");
+  src: url("../fonts/trueno/TruenoLt.woff");
+  src: url("../fonts/trueno/TruenoLt.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Audiowide';
-  src: url("../fonts/Audiowide-Regular.ttf");
+  src: url("../fonts/Audiowide/Audiowide-Regular.eot");
+  src: url("../fonts/Audiowide/Audiowide-Regular.ttf");
+  src: url("../fonts/Audiowide/Audiowide-Regular.woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -140,23 +151,23 @@
 }
 
 .header_nav_bar > li:nth-child(2) {
-  -webkit-animation-delay: 5.6s;
-  animation-delay: 5.6s;
+  -webkit-animation-delay: 4.6s;
+  animation-delay: 4.6s;
 }
 
 .header_nav_bar > li:nth-child(3) {
-  -webkit-animation-delay: 6.4s;
-  animation-delay: 6.4s;
-}
-
-.header_nav_bar > li:nth-child(4) {
   -webkit-animation-delay: 5.4s;
   animation-delay: 5.4s;
 }
 
+.header_nav_bar > li:nth-child(4) {
+  -webkit-animation-delay: 4.4s;
+  animation-delay: 4.4s;
+}
+
 .header_nav_bar > li:nth-child(1) {
-  -webkit-animation-delay: 6s;
-  animation-delay: 6s;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
 }
 
 .header_nav_bar_right {
@@ -174,18 +185,18 @@
 }
 
 .header_nav_bar_right > li:nth-child(1) {
-  -webkit-animation-delay: 5.2s;
-  animation-delay: 5.2s;
+  -webkit-animation-delay: 4.2s;
+  animation-delay: 4.2s;
 }
 
 .header_nav_bar_right > li:nth-child(2) {
-  -webkit-animation-delay: 5.5s;
-  animation-delay: 5.5s;
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
 }
 
 .header_nav_bar_right > li:nth-child(3) {
-  -webkit-animation-delay: 5.8s;
-  animation-delay: 5.8s;
+  -webkit-animation-delay: 4.8s;
+  animation-delay: 4.8s;
   margin-right: 5px;
 }
 
@@ -3929,7 +3940,7 @@ i:hover {
   }
 
   .main_discription_top_right_shoes {
-    width: 530px;
+    width: 535px;
     height: 200px;
     margin-top: 47px;
   }

@@ -1,0 +1,204 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-10_shoe_item_4 {
+  background-image: url(main_sprite.png);
+  background-position: 0px -2728px;
+  width: 450px;
+  height: 450px;
+}
+.icon-11_shoe_item_5 {
+  background-image: url(main_sprite.png);
+  background-position: -1840px -2728px;
+  width: 450px;
+  height: 450px;
+}
+.icon-12_shoe_item_6 {
+  background-image: url(main_sprite.png);
+  background-position: -460px -2728px;
+  width: 450px;
+  height: 450px;
+}
+.icon-13_shoe_item_7 {
+  background-image: url(main_sprite.png);
+  background-position: -920px -2728px;
+  width: 450px;
+  height: 450px;
+}
+.icon-14_shoe_item_8 {
+  background-image: url(main_sprite.png);
+  background-position: -1380px -2728px;
+  width: 450px;
+  height: 450px;
+}
+.icon-15_sprite_brands {
+  background-image: url(main_sprite.png);
+  background-position: -1290px -1995px;
+  width: 1056px;
+  height: 117px;
+}
+.icon-16_bg_posts {
+  background-image: url(main_sprite.png);
+  background-position: 0px -1448px;
+  width: 1280px;
+  height: 720px;
+}
+.icon-17_bg_posts_comment {
+  background-image: url(main_sprite.png);
+  background-position: -1710px -2247px;
+  width: 176px;
+  height: 176px;
+}
+.icon-18_post_1 {
+  background-image: url(main_sprite.png);
+  background-position: -2082px -2247px;
+  width: 128px;
+  height: 128px;
+}
+.icon-19_man {
+  background-image: url(main_sprite.png);
+  background-position: -3071px -1073px;
+  width: 88px;
+  height: 88px;
+}
+.icon-1_shoe_first {
+  background-image: url(main_sprite.png);
+  background-position: 0px 0px;
+  width: 1986px;
+  height: 1438px;
+}
+.icon-20_woman {
+  background-image: url(main_sprite.png);
+  background-position: -3071px -935px;
+  width: 88px;
+  height: 88px;
+}
+.icon-26_footer_sprite {
+  background-image: url(main_sprite.png);
+  background-position: -1710px -2178px;
+  width: 939px;
+  height: 59px;
+}
+.icon-27_footer_sprite_second {
+  background-image: url(main_sprite.png);
+  background-position: -2806px -1338px;
+  width: 176px;
+  height: 35px;
+}
+.icon-28_news {
+  background-image: url(main_sprite.png);
+  background-position: -3117px -1448px;
+  width: 50px;
+  height: 100px;
+}
+.icon-2_shoe_third_2 {
+  background-image: url(../img/main_sprite.png);
+  background-position: 0px -2178px;
+  width: 540px;
+  height: 540px;
+}
+.icon-3_shoe_third_add {
+  background-image: url(main_sprite.png);
+  background-position: -3071px -1171px;
+  width: 82px;
+  height: 82px;
+}
+.icon-4_shoe_second {
+  background-image: url(../img/main_sprite.png);
+  background-position: -1160px -2178px;
+  width: 540px;
+  height: 255px;
+}
+.icon-5_shoe_fourth {
+  background-image: url(main_sprite.png);
+  background-position: -2806px -1073px;
+  width: 255px;
+  height: 255px;
+}
+.icon-6_shoe_fift {
+  background-image: url(main_sprite.png);
+  background-position: -2806px -808px;
+  width: 255px;
+  height: 255px;
+}
+.icon-7_shoe_item_1 {
+  background-image: url(main_sprite.png);
+  background-position: -2857px -1708px;
+  width: 235px;
+  height: 235px;
+}
+.icon-8_shoe_item_2 {
+  background-image: url(main_sprite.png);
+  background-position: -2300px -2728px;
+  width: 200px;
+  height: 200px;
+}
+.icon-9_shoe_item_3 {
+  background-image: url(main_sprite.png);
+  background-position: -2857px -1448px;
+  width: 250px;
+  height: 250px;
+}
+.icon-footer {
+  background-image: url(main_sprite.png);
+  background-position: -1896px -2247px;
+  width: 176px;
+  height: 176px;
+}
+.icon-icon_bg {
+  background-image: url(main_sprite.png);
+  background-position: -3071px -808px;
+  width: 117px;
+  height: 117px;
+}
+.icon-line_logo {
+  background-image: url(main_sprite.png);
+  background-position: -2356px -1995px;
+  width: 500px;
+  height: 100px;
+}
+.icon-slider_1_sneakers_1 {
+  background-image: url(main_sprite.png);
+  background-position: -550px -2178px;
+  width: 600px;
+  height: 400px;
+}
+.icon-slider_2_sneakers_2 {
+  background-image: url(main_sprite.png);
+  background-position: -1290px -1448px;
+  width: 807px;
+  height: 537px;
+}
+.icon-slider_3_sneakers_3 {
+  background-image: url(main_sprite.png);
+  background-position: -2107px -1448px;
+  width: 740px;
+  height: 520px;
+}
+.icon-slider_4_sneakers_4 {
+  background-image: url(main_sprite.png);
+  background-position: -1996px -808px;
+  width: 800px;
+  height: 600px;
+}
+.icon-slider_5_sneakers_5 {
+  background-image: url(main_sprite.png);
+  background-position: -1996px 0px;
+  width: 1200px;
+  height: 798px;
+}
